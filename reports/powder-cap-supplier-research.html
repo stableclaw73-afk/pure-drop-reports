@@ -15,7 +15,7 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
             background: #f5f5f5;
@@ -81,23 +81,46 @@
             border-collapse: collapse;
             margin: 20px 0;
             background: white;
+            font-size: 14px;
         }
         
         th {
             background: #0066cc;
             color: white;
-            padding: 12px;
+            padding: 12px 8px;
             text-align: left;
             font-weight: 600;
+            position: sticky;
+            top: 0;
         }
         
         td {
-            padding: 12px;
+            padding: 10px 8px;
             border-bottom: 1px solid #e0e0e0;
+            vertical-align: top;
         }
         
         tr:hover {
             background: #f8f9fa;
+        }
+        
+        .supplier-table {
+            overflow-x: auto;
+            margin: 30px 0;
+        }
+        
+        .rating-stars {
+            color: #ffa500;
+        }
+        
+        .recommended {
+            background: #e8f5e9 !important;
+        }
+        
+        .supplier-number {
+            font-weight: bold;
+            color: #0066cc;
+            font-size: 16px;
         }
         
         ul {
@@ -125,11 +148,6 @@
             border-left: 4px solid #4caf50;
         }
         
-        .warning {
-            background: #ffebee;
-            border-left: 4px solid #f44336;
-        }
-        
         .checklist {
             list-style: none;
             margin-left: 0;
@@ -145,14 +163,11 @@
         a {
             color: #0066cc;
             text-decoration: none;
+            word-break: break-all;
         }
         
         a:hover {
             text-decoration: underline;
-        }
-        
-        .emoji {
-            font-style: normal;
         }
         
         @media print {
@@ -165,29 +180,190 @@
                 padding: 20px;
             }
         }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            table {
+                font-size: 12px;
+            }
+            th, td {
+                padding: 8px 4px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>POWDER-RELEASE CAP SUPPLIER RESEARCH - EXECUTIVE SUMMARY</h1>
+        <h1>POWDER-RELEASE CAP SUPPLIER RESEARCH</h1>
         
         <div class="meta">
             <strong>Date:</strong> February 11, 2026<br>
             <strong>Prepared for:</strong> Pure Drop / Roie<br>
-            <strong>Research Focus:</strong> KA-EX-style powder-release caps for RTD bottles
+            <strong>Research Focus:</strong> KA-EX-style powder-release caps for RTD bottles<br>
+            <strong>Suppliers Found:</strong> 13 qualified manufacturers
         </div>
 
         <div class="highlight-box success">
-            <h2><span class="emoji">🎯</span> MISSION ACCOMPLISHED</h2>
+            <h2>🎯 MISSION ACCOMPLISHED</h2>
             <p><strong>Found:</strong> 13 qualified Chinese manufacturers of powder-release caps suitable for creatine RTD bottles</p>
             <p><strong>Product Type:</strong> Solid-Liquid Separation Caps (keeps powder dry in cap chamber until activated)</p>
             <p><strong>Price Range:</strong> $0.03-$0.50 per unit (depending on MOQ and features)</p>
         </div>
 
-        <h2><span class="emoji">⚡</span> IMMEDIATE ACTION ITEMS</h2>
+        <h2>📋 COMPLETE SUPPLIER DATABASE</h2>
+        
+        <div class="supplier-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 80px;">#</th>
+                        <th style="width: 120px;">Price/Unit</th>
+                        <th style="width: 100px;">MOQ</th>
+                        <th style="width: 100px;">Experience</th>
+                        <th style="width: 80px;">Rating</th>
+                        <th style="width: 80px;">Size</th>
+                        <th>Key Features</th>
+                        <th style="width: 150px;">Best For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- TIER 1: LOW MOQ TESTING -->
+                    <tr class="recommended">
+                        <td class="supplier-number">#1</td>
+                        <td>$0.06-$0.20</td>
+                        <td><strong>1,500</strong></td>
+                        <td>1 year</td>
+                        <td><span class="rating-stars">⭐</span> 4.6/5.0</td>
+                        <td>28-30mm</td>
+                        <td>Food Grade PP, Press-to-dispense, Matcha tested</td>
+                        <td><strong>Initial testing</strong></td>
+                    </tr>
+                    <tr class="recommended">
+                        <td class="supplier-number">#2</td>
+                        <td>$0.08-$0.16</td>
+                        <td><strong>1,000</strong></td>
+                        <td>1 year</td>
+                        <td><span class="rating-stars">⭐⭐⭐⭐⭐</span> 5.0/5.0</td>
+                        <td>28mm</td>
+                        <td>Screw cap with chamber, Perfect reviews</td>
+                        <td><strong>Small test batch</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="supplier-number">#3</td>
+                        <td>$0.08-$0.16</td>
+                        <td>1,000</td>
+                        <td>1 year</td>
+                        <td><span class="rating-stars">⭐⭐⭐⭐⭐</span> 5.0/5.0</td>
+                        <td>28mm</td>
+                        <td>PP Food Grade, Alternative low MOQ</td>
+                        <td>Test batch alternative</td>
+                    </tr>
+                    
+                    <!-- TIER 2: MID-VOLUME -->
+                    <tr class="recommended">
+                        <td class="supplier-number">#4</td>
+                        <td><strong>$0.03-$0.10</strong></td>
+                        <td>10,000</td>
+                        <td><strong>14 years</strong></td>
+                        <td>N/A</td>
+                        <td>28mm</td>
+                        <td><strong>Most experienced, Best price</strong></td>
+                        <td><strong>First production run</strong></td>
+                    </tr>
+                    <tr class="recommended">
+                        <td class="supplier-number">#5</td>
+                        <td>$0.05-$0.10</td>
+                        <td>10,000</td>
+                        <td>12 years</td>
+                        <td><span class="rating-stars">⭐⭐⭐⭐⭐</span> 4.9/5.0 (18)</td>
+                        <td>28mm</td>
+                        <td><strong>PCO1810 standard, Best reviews, Sports bottles</strong></td>
+                        <td><strong>First production run</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="supplier-number">#6</td>
+                        <td>$0.06-$0.10</td>
+                        <td>10,000</td>
+                        <td>8 years</td>
+                        <td>⚠️ 3.7/5.0</td>
+                        <td>28mm</td>
+                        <td>PCO1810, Lower rating</td>
+                        <td>Samples only</td>
+                    </tr>
+                    <tr>
+                        <td class="supplier-number">#7</td>
+                        <td>$0.11-$0.12</td>
+                        <td>10,000</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>TBC</td>
+                        <td>Matcha powder, Film seal for freshness</td>
+                        <td>Extra freshness needed</td>
+                    </tr>
+                    
+                    <!-- TIER 3: HIGH-VOLUME -->
+                    <tr class="recommended">
+                        <td class="supplier-number">#8</td>
+                        <td>$0.05-$0.06</td>
+                        <td>50,000</td>
+                        <td><strong>17 years</strong></td>
+                        <td><span class="rating-stars">⭐⭐⭐⭐⭐</span> 5.0/5.0 (10)</td>
+                        <td>30mm</td>
+                        <td><strong>Longest track record, Perfect rating</strong></td>
+                        <td><strong>Scale production</strong></td>
+                    </tr>
+                    <tr class="recommended">
+                        <td class="supplier-number">#9</td>
+                        <td>$0.05-$0.06</td>
+                        <td>50,000</td>
+                        <td>11 years</td>
+                        <td><span class="rating-stars">⭐⭐⭐⭐⭐</span> 5.0/5.0</td>
+                        <td>28mm</td>
+                        <td>Tea/fruit/veg powder tested</td>
+                        <td><strong>Scale production</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="supplier-number">#10</td>
+                        <td>$0.04-$0.05</td>
+                        <td>50,000</td>
+                        <td>2 years</td>
+                        <td><span class="rating-stars">⭐⭐⭐⭐⭐</span> 5.0/5.0</td>
+                        <td><strong>38mm</strong></td>
+                        <td>Larger diameter, Twist-off, 60 sold</td>
+                        <td>Larger bottles</td>
+                    </tr>
+                    
+                    <!-- TIER 4: SPECIAL OPTIONS -->
+                    <tr class="recommended" style="background: #fffbea !important;">
+                        <td class="supplier-number">#11</td>
+                        <td>$60-100/set</td>
+                        <td><strong>1 SET</strong></td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>30mm</td>
+                        <td><strong>IN STOCK! Ships immediately, Single sample</strong></td>
+                        <td><strong>⚡ IMMEDIATE TEST</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="supplier-number">CHTNature</td>
+                        <td><strong>$0.30-$0.50</strong></td>
+                        <td>10,000</td>
+                        <td>Established</td>
+                        <td>N/A</td>
+                        <td>Various</td>
+                        <td><strong>PRE-FILLED with powder (2g), Matcha/Coffee available</strong></td>
+                        <td>Turnkey solution</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <div class="highlight-box urgent">
-            <h3><span class="emoji">🔥</span> URGENT - Order Sample NOW (Today)</h3>
+            <h2>⚡ IMMEDIATE ACTION ITEMS</h2>
+            
+            <h3>🔥 URGENT - Order Sample NOW (Today)</h3>
             <p><strong>Supplier #11</strong> - 30mm Solid Drink Powder Lid</p>
             <ul>
                 <li><strong>MOQ: 1 SET ONLY</strong> (single sample for testing)</li>
@@ -196,10 +372,8 @@
                 <li><strong>Link:</strong> <a href="https://www.alibaba.com/product-detail/In-Stock-30mm-Solid-Drink-Powder_1601391762670.html" target="_blank">View on Alibaba</a></li>
                 <li><strong>Action:</strong> Contact via Alibaba today, request rush shipping</li>
             </ul>
-        </div>
 
-        <div class="highlight-box">
-            <h3><span class="emoji">📦</span> NEXT - Order Small Test Batch (This Week)</h3>
+            <h3>📦 NEXT - Order Small Test Batch (This Week)</h3>
             <p><strong>Supplier #1, #2, or #3</strong> - 28mm caps</p>
             <ul>
                 <li><strong>MOQ:</strong> 1,000-1,500 pieces</li>
@@ -209,7 +383,7 @@
             </ul>
         </div>
 
-        <h2><span class="emoji">💰</span> PRICING BREAKDOWN BY ORDER SIZE</h2>
+        <h2>💰 PRICING BREAKDOWN BY ORDER SIZE</h2>
         
         <table>
             <thead>
@@ -260,7 +434,7 @@
             </tbody>
         </table>
 
-        <h2><span class="emoji">🏆</span> TOP 3 RECOMMENDATIONS</h2>
+        <h2>🏆 TOP 3 RECOMMENDATIONS</h2>
 
         <div class="highlight-box">
             <h3>1️⃣ FOR IMMEDIATE TESTING (Ship This Week)</h3>
@@ -299,42 +473,52 @@
             </ul>
         </div>
 
-        <h2><span class="emoji">🔧</span> TECHNICAL SPECIFICATIONS</h2>
+        <h2>🔧 TECHNICAL SPECIFICATIONS</h2>
 
-        <h3>Standard Sizes Available:</h3>
-        <ul>
-            <li><strong>28mm</strong> - Most common (PCO1810 standard threading)</li>
-            <li><strong>30mm</strong> - Alternative standard</li>
-            <li><strong>38mm</strong> - Larger diameter option</li>
-        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Specification</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Standard Sizes</strong></td>
+                    <td>
+                        <strong>28mm</strong> - Most common (PCO1810 standard threading)<br>
+                        <strong>30mm</strong> - Alternative standard<br>
+                        <strong>38mm</strong> - Larger diameter option
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Materials</strong></td>
+                    <td><strong>PP (Polypropylene)</strong> - Food grade, BPA-free<br>
+                    Requires food safety certificates: FDA, LFGB</td>
+                </tr>
+                <tr>
+                    <td><strong>Powder Capacity</strong></td>
+                    <td><strong>Estimated:</strong> 3-10g per cap chamber<br>
+                    <strong>Creatine dose needed:</strong> 3-5g (standard serving)<br>
+                    ⚠️ <strong>MUST CONFIRM</strong> exact capacity with suppliers</td>
+                </tr>
+                <tr>
+                    <td><strong>Activation Mechanisms</strong></td>
+                    <td>
+                        <strong>Press-to-dispense</strong> (push button releases powder)<br>
+                        <strong>Twist-off</strong> (unscrew top section to release)<br>
+                        <strong>Screw cap with chamber</strong> (open cap, powder falls in)
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Threading</strong></td>
+                    <td><strong>PCO1810</strong> - Industry standard (fits Coca-Cola, Pepsi, most water bottles)<br>
+                    <strong>Custom threading</strong> - Available with higher MOQ</td>
+                </tr>
+            </tbody>
+        </table>
 
-        <h3>Materials:</h3>
-        <ul>
-            <li><strong>PP (Polypropylene)</strong> - Food grade, BPA-free</li>
-            <li>Requires food safety certificates: FDA, LFGB</li>
-        </ul>
-
-        <h3>Powder Capacity:</h3>
-        <ul>
-            <li><strong>Estimated:</strong> 3-10g per cap chamber</li>
-            <li><strong>Creatine dose needed:</strong> 3-5g (standard serving)</li>
-            <li>⚠️ <strong>MUST CONFIRM</strong> exact capacity with suppliers</li>
-        </ul>
-
-        <h3>Activation Mechanisms:</h3>
-        <ul>
-            <li><strong>Press-to-dispense</strong> (push button releases powder)</li>
-            <li><strong>Twist-off</strong> (unscrew top section to release)</li>
-            <li><strong>Screw cap with chamber</strong> (open cap, powder falls in)</li>
-        </ul>
-
-        <h3>Threading:</h3>
-        <ul>
-            <li><strong>PCO1810</strong> - Industry standard (fits Coca-Cola, Pepsi, most water bottles)</li>
-            <li><strong>Custom threading</strong> - Available with higher MOQ</li>
-        </ul>
-
-        <h2><span class="emoji">📋</span> NEXT STEPS - ACTION CHECKLIST</h2>
+        <h2>📞 NEXT STEPS - ACTION CHECKLIST</h2>
 
         <div class="highlight-box">
             <h3>TODAY (Feb 11):</h3>
@@ -364,7 +548,7 @@
         </div>
 
         <div class="highlight-box success" style="margin-top: 40px;">
-            <h2><span class="emoji">🎉</span> BOTTOM LINE</h2>
+            <h2>🎉 BOTTOM LINE</h2>
             <p><strong>WE FOUND THEM!</strong> Multiple Chinese manufacturers producing exactly the type of powder-release caps you need for Pure Drop RTD bottles.</p>
             <ul>
                 <li><strong>Cost:</strong> $0.03-$0.20 per cap depending on volume</li>
